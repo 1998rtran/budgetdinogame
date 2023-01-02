@@ -13,7 +13,7 @@ const checkDead = setInterval(function(){
     if(blockLeft<20 && blockLeft>0 && characterTop>=130) {
         block.style.animation = "none";
         block.style.display = "none";
-        alert("You lose!");
+        alert("You lose! Refresh to try again.");
     }
 }, 10)
 
@@ -24,3 +24,6 @@ function jump(){
     },500);
 };
 game.addEventListener("click", jump);
+
+alert(`Game starts right away!
+click in box to jump`)
